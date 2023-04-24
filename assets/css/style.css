@@ -1,71 +1,125 @@
-{
+* {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-}
-body{
-    background-color: rgb(155, 158, 160);
+    padding: 0;
 }
 
-.header{
-   padding: 20px;
-   background-color:rgb(25, 95, 156) ; 
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-.header h1{
-    display: inline-block;
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+/* Header */
+.header {
+    background-color: rgb(69, 69, 126);
     color: white;
-    font-size: 60px;
+    padding: 20px;
 }
 
-.header div ul {
+.header h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+.navBar {
     list-style-type: none;
 }
 
-.header div ul li {
-    font-size: 25px;
+.navBar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navBar li a {
+    font-size: 20px;
+}
+
+/* About Me */
+#about-me {
     display: flex;
-    flex-direction: row-reverse;
-
+    flex-wrap: wrap;
+    padding: 40px;
 }
-
-div.about.me h2{
-    font-size: 50px;
-    padding: 30px;
-}
-
-
 
 .self-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 250px;
+    height: auto;
 }
 
-p{
-    color: rgb(25, 95, 156);
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#about-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-div.Work h2{
-    font-size: 50px;
-}
-div.Work img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+#about-me p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
 }
 
-.footer h2 {
-    font-size: 50px;
+/* Work */
+#work {
+    padding: 40px;
 }
-div.contact.me a{
-    font-size: xx-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display:inline-block;
-    
+
+#work h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Contact Me */
+#contact-me {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-links {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+#resume {
+    padding: 40px;
+}
+
+.resume{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
 }
